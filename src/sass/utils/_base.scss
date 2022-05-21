@@ -1,13 +1,12 @@
-// .page-body {
-//     background-color: $color-bk-primary;
-//     color: $color-text-primary;
-//     font-family: Roboto, sans-serif;
+.page-body {
+    background-color: $color-bk-primary;
+    color: $color-text-primary;
+    font-family: Poppins, sans-serif;
 
-//     // &.modal-open,
-//     // &.menu-open {
-//     //     overflow: hidden;
-//     // }
-// }
+    &.menu-open {
+        overflow: hidden;
+    }
+}
 
 .visually-hidden {
     position: absolute;

@@ -3,6 +3,16 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.page-body {
+  background-color: #E5E5E5;
+  color: #8F95A5;
+  font-family: Poppins, sans-serif;
+}
+
+.page-body.menu-open {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -67,5 +77,121 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.page-header__btn {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-header__btn--desktop {
+    display: none;
+  }
+}
+
+.page-header__btn {
+  fill: #39515E;
+  background-color: transparent;
+  border: none;
+}
+
+.page-header__icon {
+  fill: #39515E;
+}
+
+@media screen and (max-width: 574px) {
+  .page-header__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .page-header__icon {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+.page-header__btn.is-open .page-header__icon-menu {
+  display: none;
+}
+
+.page-header__icon-cross {
+  display: none;
+}
+
+.page-header__btn.is-open .page-header__icon-cross {
+  display: block;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: none;
+  text-decoration: none;
+  color: #939393;
+}
+
+.logo--brit {
+  color: #000000;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header__menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: #ffffff;
+  }
+  .page-header__menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 574px) {
+  .page-header__menu.is-open {
+    top: 80px;
+    width: 100%;
+  }
+}
+
+.nav-site {
+  padding: 48px 14px;
+  border-top: 1px #C4C4C4 solid;
 }
 /*# sourceMappingURL=main.css.map */
