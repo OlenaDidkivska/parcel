@@ -1,0 +1,33 @@
+.hero__img{
+    @media screen and (max-width: 574px) {
+        margin-bottom: 16px;
+    }
+}
+.hero__title{
+    @include font (600, 24px, 1.5);
+    color: $color-title-primary;
+
+    @media screen and (max-width: 574px) {
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.hero__text{
+    @include font (none, 14px, 1.5);
+    text-align: center;
+    color: $color-text-primary;
+    margin-bottom: 33px;
+}
+
+.hero__btn{
+    @extend %button;
+    width: 289px;
+    height: 60px;
+    background: $color-accent;
+    border-radius: 5px;
+    @include font (500, 16px, 1.5);
+    color: $color-text-btn;
+}
