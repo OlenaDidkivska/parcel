@@ -91,7 +91,7 @@ img {
   height: auto;
 }
 
-.page-header__btn--desktop, .page-header__btn {
+.page-header__btn--desktop, .page-header__btn, .hero__btn {
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -144,7 +144,6 @@ img {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  letter-spacing: none;
   color: #000000;
 }
 
@@ -196,7 +195,6 @@ img {
   font-weight: 400;
   font-size: 30px;
   line-height: 1.5;
-  letter-spacing: none;
   text-decoration: none;
   color: #939393;
 }
@@ -254,7 +252,48 @@ img {
   font-weight: 500;
   font-size: 22px;
   line-height: 2.95;
-  letter-spacing: none;
   color: #263238;
+}
+
+@media screen and (max-width: 574px) {
+  .hero__img {
+    margin-bottom: 16px;
+  }
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+@media screen and (max-width: 574px) {
+  .hero__title {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__text {
+  font-weight: none;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #8F95A5;
+  margin-bottom: 33px;
+}
+
+.hero__btn {
+  width: 289px;
+  height: 60px;
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

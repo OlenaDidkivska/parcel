@@ -27,7 +27,7 @@
     @include bordered (2px, $color-accent, solid );
     border-radius: 5px;
     background-color: $color-bkbtn-menu;
-    @include font (400, 20px, 1.5, none);
+    @include font (400, 20px, 1.5);
     color: $color-title-primary;
 
     @media screen and (max-width: 574px) {
@@ -72,7 +72,7 @@
 
 .logo {
     font-style: normal;
-    @include font (400, 30px, 1.5, none);
+    @include font (400, 30px, 1.5);
     text-decoration: none;
     color: $color-logo-lex;
 
@@ -126,7 +126,7 @@
 .nav-site__link {
     text-decoration: none;
     font-style: normal;
-    @include font (500, 22px, 2.95, none);
+    @include font (500, 22px, 2.95);
     color: $color-title-secondary;
 }
 
