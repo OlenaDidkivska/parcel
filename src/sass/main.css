@@ -4,7 +4,7 @@
  * Все паршалы подключаются сюда.
  */
 .page-body {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   color: #8F95A5;
   font-family: Poppins, sans-serif;
 }
@@ -28,8 +28,6 @@
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,6 +35,8 @@
 @media screen and (min-width: 320px) {
   .container {
     width: 320px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }
 
@@ -255,6 +255,10 @@ img {
   color: #263238;
 }
 
+.hero {
+  margin-bottom: 53px;
+}
+
 @media screen and (max-width: 574px) {
   .hero__img {
     margin-bottom: 16px;
@@ -295,5 +299,83 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
+}
+
+.skills {
+  margin-bottom: 50px;
+}
+
+.skills__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.skills__item {
+  position: relative;
+  background: #F5F5F5;
+  border-radius: 5px;
+  margin-bottom: 21px;
+  padding: 8px 16px 45px;
+  height: 473px;
+}
+
+.skills__item--height {
+  height: 600px;
+}
+
+.skills__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.skills__img--margin {
+  margin-bottom: 20px;
+}
+
+.skills__title-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  color: #263238;
+  width: 137px;
+  height: 69px;
+  padding: 34px 0 17px;
+}
+
+.skills__text {
+  font-weight: none;
+  font-size: 13px;
+  line-height: 1.54;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.skills__text--margin {
+  margin-bottom: 20px;
+}
+
+.skills__btn {
+  position: absolute;
+  bottom: 44px;
+  width: 178px;
+  height: 50px;
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.skills__btn--bottom {
+  bottom: 57px;
 }
 /*# sourceMappingURL=main.css.map */
