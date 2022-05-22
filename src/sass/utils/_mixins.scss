@@ -1,5 +1,5 @@
-@mixin bordered ($color, $type) {
-    border: 1px $type $color;
+@mixin bordered ($line-width, $color, $type) {
+    border: $line-width $type $color;
 }
 
 // @mixin transition($property, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {

@@ -40,9 +40,21 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1379px) {
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .container {
+    width: 575px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 768px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1379px) {
+  .container {
+    width: 992px;
   }
 }
 
@@ -79,7 +91,7 @@ img {
   height: auto;
 }
 
-.page-header__btn {
+.page-header__btn--desktop, .page-header__btn {
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -94,6 +106,27 @@ img {
           align-items: center;
 }
 
+.page-header__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 574px) {
+  .page-header__container {
+    padding-top: 36px;
+    padding-bottom: 29px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+  .page-header__container {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .page-header__container {
     -webkit-box-pack: justify;
@@ -103,9 +136,16 @@ img {
   }
 }
 
-@media screen and (max-width: 991px) {
+.page-header__btn--desktop {
+  border: 2px solid #263238;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 574px) {
   .page-header__btn--desktop {
-    display: none;
+    width: 291px;
+    height: 65px;
   }
 }
 
@@ -173,9 +213,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -187,11 +224,31 @@ img {
   .page-header__menu.is-open {
     top: 80px;
     width: 100%;
+    padding: 48px 15px;
   }
 }
 
 .nav-site {
-  padding: 48px 14px;
+  margin-bottom: 69px;
+  position: relative;
+}
+
+.nav-site::before {
+  content: '';
+  display: block;
   border-top: 1px #C4C4C4 solid;
+  position: absolute;
+  width: 100%;
+  top: -48px;
+}
+
+.nav-site__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2.95;
+  letter-spacing: none;
+  color: #263238;
 }
 /*# sourceMappingURL=main.css.map */
