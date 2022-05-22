@@ -22,10 +22,13 @@
 }
 
 .page-header__btn--desktop {
+    font-family: Poppins, sans-serif;
     @extend %button;
     @include bordered (2px, $color-accent, solid );
     border-radius: 5px;
     background-color: $color-bkbtn-menu;
+    @include font (400, 20px, 1.5, none);
+    color: $color-title-primary;
 
     @media screen and (max-width: 574px) {
         width: 291px;
