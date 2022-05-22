@@ -318,13 +318,16 @@ img {
   position: relative;
   background: #F5F5F5;
   border-radius: 5px;
-  margin-bottom: 21px;
   padding: 8px 16px 45px;
   height: 473px;
 }
 
 .skills__item--height {
   height: 600px;
+}
+
+.skills__item:not(:last-child) {
+  margin-bottom: 21px;
 }
 
 .skills__img {
@@ -377,5 +380,71 @@ img {
 
 .skills__btn--bottom {
   bottom: 57px;
+}
+
+.about__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+}
+
+.about__text {
+  font-weight: none;
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: center;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+}
+
+.about__number {
+  position: absolute;
+  top: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  color: #2A3246;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
