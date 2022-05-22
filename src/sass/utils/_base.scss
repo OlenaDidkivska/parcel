@@ -1,13 +1,12 @@
-// .page-body {
-//     background-color: $color-bk-primary;
-//     color: $color-text-primary;
-//     font-family: Roboto, sans-serif;
+.page-body {
+    background-color: $color-bk-primary;
+    color: $color-text-primary;
+    font-family: Poppins, sans-serif;
 
-//     // &.modal-open,
-//     // &.menu-open {
-//     //     overflow: hidden;
-//     // }
-// }
+    &.menu-open {
+        overflow: hidden;
+    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -32,8 +31,16 @@
         width: 320px;
     }
 
-    @media (min-width: 768px) and (max-width: 1379px) {
+    @media screen and (min-width: 575px) and (max-width: 767px) {
+        width: 575px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
         width: 768px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1379px) {
+        width: 992px;
     }
 
     @media screen and (min-width: 1380px) {

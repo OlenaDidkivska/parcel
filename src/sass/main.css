@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.page-body {
+  background-color: #E5E5E5;
+  color: #8F95A5;
+  font-family: Poppins, sans-serif;
+}
+
+.page-body.menu-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 767px) {
+  .container {
+    width: 575px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1379px) {
+  .container {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .container {
+    width: 1380px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header__btn--desktop, .page-header__btn {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header__container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 574px) {
+  .page-header__container {
+    padding-top: 36px;
+    padding-bottom: 29px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+  .page-header__container {
+    padding-top: 39px;
+    padding-bottom: 11px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+}
+
+.page-header__btn--desktop {
+  border: 2px solid #263238;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 574px) {
+  .page-header__btn--desktop {
+    width: 291px;
+    height: 65px;
+  }
+}
+
+.page-header__btn {
+  fill: #39515E;
+  background-color: transparent;
+  border: none;
+}
+
+.page-header__icon {
+  fill: #39515E;
+}
+
+@media screen and (max-width: 574px) {
+  .page-header__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .page-header__icon {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+.page-header__btn.is-open .page-header__icon-menu {
+  display: none;
+}
+
+.page-header__icon-cross {
+  display: none;
+}
+
+.page-header__btn.is-open .page-header__icon-cross {
+  display: block;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: none;
+  text-decoration: none;
+  color: #939393;
+}
+
+.logo--brit {
+  color: #000000;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header__menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+    background-color: #ffffff;
+  }
+  .page-header__menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) and (max-width: 574px) {
+  .page-header__menu.is-open {
+    top: 80px;
+    width: 100%;
+    padding: 48px 15px;
+  }
+}
+
+.nav-site {
+  margin-bottom: 69px;
+  position: relative;
+}
+
+.nav-site::before {
+  content: '';
+  display: block;
+  border-top: 1px #C4C4C4 solid;
+  position: absolute;
+  width: 100%;
+  top: -48px;
+}
+
+.nav-site__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2.95;
+  letter-spacing: none;
+  color: #263238;
+}
+/*# sourceMappingURL=main.css.map */

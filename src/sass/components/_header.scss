@@ -1,0 +1,130 @@
+.page-header__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @extend %align-list;
+    
+    @media screen and (max-width: 574px) {
+        padding-top: 36px;
+        padding-bottom: 29px;
+    }
+
+    @media (min-width: 575px) and (max-width: 991px) {
+        padding-top: 39px;
+        padding-bottom: 11px;
+    }
+
+    @media screen and (max-width: 991px) {
+            justify-content: space-between;
+            position: relative;
+        }
+}
+
+.page-header__btn--desktop {
+    @extend %button;
+    @include bordered (2px, $color-accent, solid );
+    border-radius: 5px;
+    background-color: $color-bkbtn-menu;
+
+    @media screen and (max-width: 574px) {
+        width: 291px;
+        height: 65px;
+    }
+}
+
+.page-header__btn {
+    @extend %button;
+    fill: $color-btn-menu;
+    background-color: $color-bkbtn-menu;
+    border: none;
+}
+
+.page-header__icon {
+    fill: $color-btn-menu;
+
+    @media screen and (max-width: 574px) {
+        width: 34px;
+        height: 34px;
+    }
+
+    @media screen and (min-width: 575px) {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+.page-header__btn.is-open .page-header__icon-menu {
+    display: none;
+}
+
+.page-header__icon-cross {
+    display: none;
+
+    .page-header__btn.is-open & {
+        display: block;
+        
+    }
+}
+
+.logo {
+    font-style: normal;
+    @include font (400, 30px, 1.5, none);
+    text-decoration: none;
+    color: $color-logo-lex;
+
+    &--brit{
+        color: $color-logo-brit;
+    }
+}
+
+.page-header__menu {
+    @media screen and (max-width: 991px) {
+        display: none;
+        position: fixed;
+        left: 0;
+        height: 100%;
+        z-index: 1;
+        overflow-y: scroll;
+
+        background-color: $color-bk-menu;
+
+        &.is-open {
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 574px) {
+                top: 80px;
+                width: 100%;
+                padding: 48px 15px;
+            }
+        }
+    }
+}
+
+.nav-site {
+    margin-bottom: 69px;
+    position: relative;
+
+    &::before{
+        content: '';
+        display: block;
+        border-top: 1px $color-border-menu solid;
+        position: absolute;
+        width: 100%;
+        top: -48px;
+    }
+}
+
+// .nav-site__list {}
+
+// .nav-site__item {}
+
+.nav-site__link {
+    text-decoration: none;
+    font-style: normal;
+    @include font (500, 22px, 2.95, none);
+    color: $color-title-secondary;
+}
+
+// 
