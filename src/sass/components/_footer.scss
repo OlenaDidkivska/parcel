@@ -1,0 +1,19 @@
+.page-footer{
+    margin-bottom: 48px;
+}
+
+.page-footer__container {
+    border-top: 1px $color-border-menu solid;
+}
+
+.logo--footer{
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.page-footer__text{
+    @include font (500, 11px, 1.5);
+    color: $color-text-primary;
+}
+
