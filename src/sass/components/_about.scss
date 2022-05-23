@@ -1,3 +1,7 @@
+.about {
+    margin-bottom: 84px
+}
+
 .about__title {
     @include font (600, 24px, 3.33);
     color: $color-title-primary;
