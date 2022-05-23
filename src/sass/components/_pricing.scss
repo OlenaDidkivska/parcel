@@ -49,18 +49,19 @@
 }
 
 .pricing__block{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     width: 170px;
     height: 37px;
     background-color: $color-bk-price;
     border-radius: 5px;
-    margin: 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 13px;
 }
 
 .pricing__price {
-    margin-right: 15px;
+    margin-right: 10px;
     @include font (none, 18px, 1.5);
     color: $color-accent;
 }

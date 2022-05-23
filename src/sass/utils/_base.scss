@@ -6,6 +6,11 @@
     &.menu-open {
         overflow: hidden;
     }
+
+    @media screen and (max-width: 319px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .visually-hidden {
@@ -25,8 +30,14 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (max-width: 319px) {
+            max-width: 319px;
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+
     @media screen and (min-width: 320px) {
-        width: 320px;
+        max-width: 320px;
         padding-left: 14px;
         padding-right: 14px;
     }

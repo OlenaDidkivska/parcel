@@ -7,7 +7,6 @@
     
     @media screen and (max-width: 574px) {
         padding-top: 36px;
-        padding-bottom: 29px;
     }
 
     @media (min-width: 575px) and (max-width: 991px) {
@@ -33,6 +32,10 @@
     @media screen and (max-width: 574px) {
         width: 291px;
         height: 65px;
+    }
+
+    @media screen and (max-width: 319px) {
+        width: 100%;
     }
 }
 
@@ -100,6 +103,10 @@
                 top: 80px;
                 width: 100%;
                 padding: 48px 15px;
+            }
+
+            @media screen and (max-width: 319px) {
+                width: 100vw;
             }
         }
     }

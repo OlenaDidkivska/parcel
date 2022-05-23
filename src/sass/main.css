@@ -13,6 +13,13 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 319px) {
+  .page-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -32,9 +39,17 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 319px) {
+  .container {
+    max-width: 319px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    max-width: 320px;
     padding-left: 14px;
     padding-right: 14px;
   }
@@ -116,7 +131,6 @@ img {
 @media screen and (max-width: 574px) {
   .page-header__container {
     padding-top: 36px;
-    padding-bottom: 29px;
   }
 }
 
@@ -151,6 +165,12 @@ img {
   .page-header__btn--desktop {
     width: 291px;
     height: 65px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .page-header__btn--desktop {
+    width: 100%;
   }
 }
 
@@ -232,6 +252,12 @@ img {
   }
 }
 
+@media screen and (max-width: 991px) and (max-width: 319px) {
+  .page-header__menu.is-open {
+    width: 100vw;
+  }
+}
+
 .nav-site {
   margin-bottom: 69px;
   position: relative;
@@ -299,6 +325,12 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
+}
+
+@media screen and (max-width: 319px) {
+  .hero__btn {
+    width: 100%;
+  }
 }
 
 .skills {
@@ -507,24 +539,19 @@ img {
 }
 
 .pricing__block {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
   width: 170px;
   height: 37px;
   background-color: #EEEEEE;
   border-radius: 5px;
-  margin: 0 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 13px;
 }
 
 .pricing__price {
-  margin-right: 15px;
+  margin-right: 10px;
   font-weight: none;
   font-size: 18px;
   line-height: 1.5;
