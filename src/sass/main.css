@@ -91,7 +91,7 @@ img {
   height: auto;
 }
 
-.page-header__btn--desktop, .page-header__btn, .hero__btn {
+.page-header__btn--desktop, .page-header__btn, .hero__btn, .contacts__btn {
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -536,5 +536,80 @@ img {
   font-size: 14px;
   line-height: 1.5;
   color: #546269;
+}
+
+.container {
+  margin-bottom: 55px;
+}
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 3.33;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.contacts__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+}
+
+.contacts__text {
+  font-weight: none;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.contacts__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 17px;
+  border: 1px solid #8F95A5;
+  border-radius: 5px;
+  padding: 16px 26px;
+}
+
+.contacts__input::-webkit-input-placeholder {
+  font-weight: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8F95A5;
+}
+
+.contacts__input:-ms-input-placeholder {
+  font-weight: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8F95A5;
+}
+
+.contacts__input::-ms-input-placeholder {
+  font-weight: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8F95A5;
+}
+
+.contacts__input::placeholder {
+  font-weight: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8F95A5;
+}
+
+.contacts__btn {
+  width: 100%;
+  height: 60px;
+  background: #263238;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */

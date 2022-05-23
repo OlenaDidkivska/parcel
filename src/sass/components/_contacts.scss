@@ -1,0 +1,46 @@
+.container {
+    margin-bottom: 55px;
+}
+
+.contacts__title {
+    @include font (600, 24px, 3.33);
+        color: $color-title-primary;
+        text-align: center;
+        margin-bottom: 38px;
+}
+
+.contacts__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+}
+
+.contacts__text {
+    @include font (none, 14px, 1.5);
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.contacts__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 17px;
+    @include bordered (1px, $color-text-primary, solid);
+    border-radius: 5px;
+    padding: 16px 26px;
+    
+        &::placeholder {
+            @include font (none, 12px, 1.5);
+            color: $color-text-primary;
+        }
+}
+
+.contacts__btn{
+    @extend %button;
+    width: 100%;
+    height: 60px;
+    background: $color-accent;
+    border-radius: 5px;
+    @include font (500, 14px, 1.5);
+    color: $color-bk-primary;
+}
