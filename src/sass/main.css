@@ -612,4 +612,25 @@ img {
   line-height: 1.5;
   color: #FFFFFF;
 }
+
+.page-footer {
+  margin-bottom: 48px;
+}
+
+.page-footer__container {
+  border-top: 1px #C4C4C4 solid;
+}
+
+.logo--footer {
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.page-footer__text {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #8F95A5;
+}
 /*# sourceMappingURL=main.css.map */
