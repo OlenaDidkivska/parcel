@@ -34,4 +34,9 @@
     border-radius: 5px;
     @include font (500, 16px, 1.5);
     color: $color-text-btn;
+
+    
+    @media screen and (max-width: 319px) {
+        width: 100%;
+    }
 }
