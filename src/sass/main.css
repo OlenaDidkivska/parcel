@@ -327,7 +327,7 @@ img {
 }
 
 .hero {
-  margin-bottom: 53px;
+  margin-bottom: 96px;
 }
 
 @media screen and (max-width: 574px) {
@@ -336,19 +336,38 @@ img {
   }
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .hero__img {
+    width: 424px;
+    margin-bottom: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .hero__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.5;
   color: #000000;
+  text-align: center;
 }
 
 @media screen and (max-width: 574px) {
   .hero__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
     width: 220px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .hero__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.32;
+    margin-bottom: 26px;
   }
 }
 
@@ -359,6 +378,13 @@ img {
   text-align: center;
   color: #8F95A5;
   margin-bottom: 33px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .hero__text {
+    font-size: 16px;
+    margin-bottom: 37px;
+  }
 }
 
 .hero__btn {
@@ -375,6 +401,17 @@ img {
 @media screen and (max-width: 319px) {
   .hero__btn {
     width: 100%;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .hero__btn {
+    display: block;
+    width: 305px;
+    height: 75px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -610,7 +647,7 @@ img {
   color: #546269;
 }
 
-.container {
+.contacts {
   margin-bottom: 55px;
 }
 
