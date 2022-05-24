@@ -1,6 +1,4 @@
 .page-header__container {
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     @extend %align-list;
@@ -27,16 +25,22 @@
     @include bordered (2px, $color-accent, solid );
     border-radius: 5px;
     background-color: $color-bkbtn-menu;
-    @include font (400, 20px, 1.5);
     color: $color-title-primary;
 
     @media screen and (max-width: 574px) {
         width: 291px;
         height: 65px;
+        @include font (400, 20px, 1.5);
     }
 
     @media screen and (max-width: 319px) {
         width: 100%;
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 330px;
+        height: 70px;
+        @include font (400, 22px, 1.5);
     }
 }
 
@@ -55,9 +59,9 @@
         height: 34px;
     }
 
-    @media screen and (min-width: 575px) {
-        width: 39px;
-        height: 39px;
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 43px;
+        height: 43px;
     }
 }
 
@@ -76,12 +80,19 @@
 
 .logo {
     font-style: normal;
-    @include font (400, 30px, 1.5);
     text-decoration: none;
     color: $color-logo-lex;
 
     &--brit{
         color: $color-logo-brit;
+    }
+
+    @media screen and (max-width: 574px) {
+        @include font (none, 24px, 1.5);
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (none, 30px, 1.5);
     }
 }
 
@@ -109,6 +120,12 @@
             @media screen and (max-width: 319px) {
                 width: 100vw;
             }
+
+            @media (min-width: 575px) and (max-width: 767px) {
+                top: 135px;
+                width: 100%;
+                padding: 35px 33px;
+            }
         }
     }
 }
@@ -125,6 +142,10 @@
         width: 100%;
         top: -48px;
     }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 80px;
+    }
 }
 
 // .nav-site__list {}
@@ -136,6 +157,10 @@
     font-style: normal;
     @include font (500, 22px, 2.95);
     color: $color-title-secondary;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (500, 24px, 2.71);
+    }
 }
 
 // 
