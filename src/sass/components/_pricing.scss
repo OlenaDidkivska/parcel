@@ -1,5 +1,11 @@
 .pricing{
-    margin-bottom: 72px
+    @media screen and (max-width: 574px) {
+        margin-bottom: 72px;
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 163px;
+    }
 }
 
 .pricing__title {
@@ -7,6 +13,10 @@
     color: $color-title-primary;
     text-align: center;
     margin-bottom: 49px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 54px;
+    }
 }
 
 .pricing__img {
@@ -15,7 +25,24 @@
     margin-bottom: 28px;
 
     &--margin{
-        margin-bottom: 10px
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        &--one {
+            width: 291px;
+            margin-bottom: 29px;
+        }
+
+        &--two {
+            width: 314px;
+            margin-bottom: 21px;
+        }
+
+        &--three {
+            width: 253px;
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -24,9 +51,20 @@
             margin-bottom: 63px;
         }
     
+    &--margin {
+        margin-bottom: 72px;
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 71px;
+        width: 395px;
+
         &--margin {
-            margin-bottom: 72px;
+            width: 330px;
         }
+    }
 }
 
 .pricing__title-item {
@@ -38,14 +76,22 @@
     &--margin{
         margin-bottom: 27px;
     }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (600, 24px, 1.17);
+        margin-bottom: 21px;
+    }
 }
 
 .pricing__text {
     @include font (none, 13px, 1.54);
-        font-size: 13px;
-        line-height: 20px;
         text-align: center;
         margin-bottom: 33px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (none, 14px, 1.5);
+        margin-bottom: 31px;
+    }
 }
 
 
@@ -59,16 +105,29 @@
     margin-left: auto;
     margin-right: auto;
     padding: 5px 13px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 205px;
+        height: 45px;
+    }
 }
 
 .pricing__price {
     margin-right: 10px;
     @include font (none, 18px, 1.5);
     color: $color-accent;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        font-size: 24px;
+    }
 }
 
 .pricing__block{
     @include font (none, 14px, 1.5);
     color: $colot-text-price;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        font-size: 16px;
+    }
 }
 

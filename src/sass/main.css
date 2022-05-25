@@ -687,8 +687,16 @@ img {
   text-align: center;
 }
 
-.pricing {
-  margin-bottom: 72px;
+@media screen and (max-width: 574px) {
+  .pricing {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing {
+    margin-bottom: 163px;
+  }
 }
 
 .pricing__title {
@@ -698,6 +706,12 @@ img {
   color: #000000;
   text-align: center;
   margin-bottom: 49px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__title {
+    margin-bottom: 54px;
+  }
 }
 
 .pricing__img {
@@ -710,12 +724,39 @@ img {
   margin-bottom: 10px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__img--one {
+    width: 291px;
+    margin-bottom: 29px;
+  }
+  .pricing__img--two {
+    width: 314px;
+    margin-bottom: 21px;
+  }
+  .pricing__img--three {
+    width: 253px;
+    margin-bottom: 15px;
+  }
+}
+
 .pricing__item:first-child {
   margin-bottom: 63px;
 }
 
 .pricing__item--margin {
   margin-bottom: 72px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 71px;
+    width: 395px;
+  }
+  .pricing__item--margin {
+    width: 330px;
+  }
 }
 
 .pricing__title-item {
@@ -731,14 +772,30 @@ img {
   margin-bottom: 27px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__title-item {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 21px;
+  }
+}
+
 .pricing__text {
   font-weight: none;
   font-size: 13px;
   line-height: 1.54;
-  font-size: 13px;
-  line-height: 20px;
   text-align: center;
   margin-bottom: 33px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__text {
+    font-weight: none;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 31px;
+  }
 }
 
 .pricing__block {
@@ -753,6 +810,13 @@ img {
   padding: 5px 13px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__block {
+    width: 205px;
+    height: 45px;
+  }
+}
+
 .pricing__price {
   margin-right: 10px;
   font-weight: none;
@@ -761,11 +825,23 @@ img {
   color: #263238;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__price {
+    font-size: 24px;
+  }
+}
+
 .pricing__block {
   font-weight: none;
   font-size: 14px;
   line-height: 1.5;
   color: #546269;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .pricing__block {
+    font-size: 16px;
+  }
 }
 
 .contacts {
