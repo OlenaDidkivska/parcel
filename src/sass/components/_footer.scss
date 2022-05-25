@@ -1,19 +1,40 @@
 .page-footer{
     margin-bottom: 48px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 0px;
+    }
 }
 
 .page-footer__container {
     border-top: 1px $color-border-menu solid;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 513px;
+        height: 96px;
+        padding: 0;
+    }
 }
 
 .logo--footer{
     text-align: center;
     display: block;
     margin-bottom: 15px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 0;
+    }
 }
 
 .page-footer__text{
     @include font (500, 11px, 1.5);
     color: $color-text-primary;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (500, 12px, 1.5);
+    }
 }
 

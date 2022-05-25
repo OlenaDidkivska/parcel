@@ -1008,8 +1008,31 @@ img {
   margin-bottom: 48px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .page-footer {
+    margin-bottom: 0px;
+  }
+}
+
 .page-footer__container {
   border-top: 1px #C4C4C4 solid;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 513px;
+    height: 96px;
+    padding: 0;
+  }
 }
 
 .logo--footer {
@@ -1018,10 +1041,24 @@ img {
   margin-bottom: 15px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .logo--footer {
+    margin-bottom: 0;
+  }
+}
+
 .page-footer__text {
   font-weight: 500;
   font-size: 11px;
   line-height: 1.5;
   color: #8F95A5;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .page-footer__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=main.css.map */
