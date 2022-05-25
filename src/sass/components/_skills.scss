@@ -1,5 +1,9 @@
 .skills {
-    margin-bottom: 50px;
+    margin-bottom: 57px;
+    
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 84px;
+    }
 }
 
 .skills__title {
@@ -7,6 +11,18 @@
     color: $color-title-primary;
     text-align: center;
     margin-bottom: 32px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (600, 30px, 2.67);
+    }
+}
+
+.skills__list{
+    @media (min-width: 575px) and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .skills__item {
@@ -24,15 +40,33 @@
     &:not(:last-child){
         margin-bottom: 21px;
     }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin: 15px;
+        flex-basis: calc((100% - 2*30px)/2);
+        height: 534px;
+        padding: 5px 15px 36px;
+    }
 }
 
 .skills__img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
 
-    &--margin {
+    @media screen and (max-width: 574px) {
+        margin-bottom: 10px;
+
+        &--margin {
         margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 185px;
+
+        &--margin {
+            margin-top: 35px;
+        }
     }
 }
 
@@ -40,18 +74,32 @@
     @include font (600, 18px, 1);
     color: $color-accent;
     width: 137px;
-    height: 69px;
-    padding: 34px 0 17px;
+
+    @media screen and (max-width: 574px) {
+        height: 69px;
+        padding: 34px 0 17px;
+    }
+    
+    @media (min-width: 575px) and (max-width: 767px) {
+        padding: 17px 0;
+        height: 52px;
+    }
 
 }
 
 .skills__text {
     @include font (none, 13px, 1.54);
-    font-size: 13px;
-    line-height: 20px;
 
     &--margin{
         margin-bottom: 20px;
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (none, 12px, 1.5);
+
+        &--margin {
+                margin-bottom: 12px;
+            }
     }
 }
 
@@ -71,7 +119,8 @@
     
     color: $color-text-btn;
 
-    &--bottom{
-        bottom: 57px;
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 200px;
+        height: 50px;
     }
 }

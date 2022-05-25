@@ -416,7 +416,13 @@ img {
 }
 
 .skills {
-  margin-bottom: 50px;
+  margin-bottom: 57px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills {
+    margin-bottom: 84px;
+  }
 }
 
 .skills__title {
@@ -426,6 +432,25 @@ img {
   color: #000000;
   text-align: center;
   margin-bottom: 32px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.67;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .skills__item {
@@ -444,14 +469,37 @@ img {
   margin-bottom: 21px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 2*30px)/2);
+        flex-basis: calc((100% - 2*30px)/2);
+    height: 534px;
+    padding: 5px 15px 36px;
+  }
+}
+
 .skills__img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
 }
 
-.skills__img--margin {
-  margin-bottom: 20px;
+@media screen and (max-width: 574px) {
+  .skills__img {
+    margin-bottom: 10px;
+  }
+  .skills__img--margin {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__img {
+    width: 185px;
+  }
+  .skills__img--margin {
+    margin-top: 35px;
+  }
 }
 
 .skills__title-item {
@@ -460,20 +508,41 @@ img {
   line-height: 1;
   color: #263238;
   width: 137px;
-  height: 69px;
-  padding: 34px 0 17px;
+}
+
+@media screen and (max-width: 574px) {
+  .skills__title-item {
+    height: 69px;
+    padding: 34px 0 17px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__title-item {
+    padding: 17px 0;
+    height: 52px;
+  }
 }
 
 .skills__text {
   font-weight: none;
   font-size: 13px;
   line-height: 1.54;
-  font-size: 13px;
-  line-height: 20px;
 }
 
 .skills__text--margin {
   margin-bottom: 20px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__text {
+    font-weight: none;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .skills__text--margin {
+    margin-bottom: 12px;
+  }
 }
 
 .skills__btn {
@@ -492,8 +561,11 @@ img {
   color: #ffffff;
 }
 
-.skills__btn--bottom {
-  bottom: 57px;
+@media (min-width: 575px) and (max-width: 767px) {
+  .skills__btn {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 .about {
