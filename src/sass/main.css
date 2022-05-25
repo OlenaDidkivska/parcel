@@ -710,7 +710,9 @@ img {
 
 @media (min-width: 575px) and (max-width: 767px) {
   .pricing__title {
-    margin-bottom: 54px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.67;
   }
 }
 
@@ -751,11 +753,13 @@ img {
   .pricing__item {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 71px;
     width: 395px;
   }
   .pricing__item--margin {
     width: 330px;
+  }
+  .pricing__item:not(:last-child) {
+    margin-bottom: 71px;
   }
 }
 
@@ -848,6 +852,12 @@ img {
   margin-bottom: 55px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 144px;
+  }
+}
+
 .contacts__title {
   font-weight: 600;
   font-size: 24px;
@@ -857,10 +867,24 @@ img {
   margin-bottom: 38px;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.67;
+  }
+}
+
 .contacts__img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 38px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__img {
+    width: 358px;
+  }
 }
 
 .contacts__text {
@@ -869,6 +893,26 @@ img {
   line-height: 1.5;
   text-align: center;
   margin-bottom: 31px;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__text {
+    font-weight: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__form {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 512px;
+    height: 60px;
+  }
 }
 
 .contacts__input {
@@ -908,6 +952,37 @@ img {
   color: #8F95A5;
 }
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__input::-webkit-input-placeholder {
+    font-weight: none;
+    font-size: 13px;
+    line-height: 1.54;
+  }
+  .contacts__input:-ms-input-placeholder {
+    font-weight: none;
+    font-size: 13px;
+    line-height: 1.54;
+  }
+  .contacts__input::-ms-input-placeholder {
+    font-weight: none;
+    font-size: 13px;
+    line-height: 1.54;
+  }
+  .contacts__input::placeholder {
+    font-weight: none;
+    font-size: 13px;
+    line-height: 1.54;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__input {
+    width: 512px;
+    height: 60px;
+    border-radius: 10px;
+  }
+}
+
 .contacts__btn {
   width: 100%;
   height: 60px;
@@ -917,6 +992,16 @@ img {
   font-size: 14px;
   line-height: 1.5;
   color: #FFFFFF;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .contacts__btn {
+    position: absolute;
+    width: 193px;
+    height: 60px;
+    right: 0;
+    border-radius: 10px;
+  }
 }
 
 .page-footer {

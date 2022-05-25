@@ -1,5 +1,9 @@
 .contacts {
     margin-bottom: 55px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        margin-bottom: 144px;
+    }
 }
 
 .contacts__title {
@@ -7,18 +11,40 @@
         color: $color-title-primary;
         text-align: center;
         margin-bottom: 38px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (600, 30px, 2.67);
+    }
 }
 
 .contacts__img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 38px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 358px;
+    }
 }
 
 .contacts__text {
     @include font (none, 14px, 1.5);
     text-align: center;
     margin-bottom: 31px;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        @include font (none, 16px, 1.5);
+        margin-bottom: 60px;
+    }
+}
+
+.contacts__form{
+    @media (min-width: 575px) and (max-width: 767px) {
+        position: relative;
+        display: flex;
+        width: 512px;
+        height: 60px;
+    }
 }
 
 .contacts__input {
@@ -29,10 +55,20 @@
     border-radius: 5px;
     padding: 16px 26px;
     
-        &::placeholder {
-            @include font (none, 12px, 1.5);
-            color: $color-text-primary;
+    &::placeholder {
+        @include font (none, 12px, 1.5);
+        color: $color-text-primary;
+
+        @media (min-width: 575px) and (max-width: 767px) {
+            @include font (none, 13px, 1.54);
         }
+    }
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        width: 512px;
+        height: 60px;
+        border-radius: 10px;
+    }
 }
 
 .contacts__btn{
@@ -43,4 +79,12 @@
     border-radius: 5px;
     @include font (500, 14px, 1.5);
     color: $color-bk-primary;
+
+    @media (min-width: 575px) and (max-width: 767px) {
+        position: absolute;
+        width: 193px;
+        height: 60px;
+        right: 0;
+        border-radius: 10px;
+    }
 }
