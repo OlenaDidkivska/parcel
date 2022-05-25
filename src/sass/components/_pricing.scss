@@ -15,7 +15,7 @@
     margin-bottom: 49px;
 
     @media (min-width: 575px) and (max-width: 767px) {
-        margin-bottom: 54px;
+        @include font (600, 30px, 2.67);
     }
 }
 
@@ -58,11 +58,14 @@
     @media (min-width: 575px) and (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 71px;
         width: 395px;
 
         &--margin {
             width: 330px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 71px;
         }
     }
 }
