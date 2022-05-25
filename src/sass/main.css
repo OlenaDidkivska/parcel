@@ -131,13 +131,14 @@ img {
 @media screen and (max-width: 574px) {
   .page-header__container {
     padding-top: 36px;
+    padding-bottom: 60px;
   }
 }
 
 @media (min-width: 575px) and (max-width: 991px) {
   .page-header__container {
     padding-top: 39px;
-    padding-bottom: 11px;
+    padding-bottom: 80px;
   }
 }
 
@@ -332,14 +333,14 @@ img {
 
 @media screen and (max-width: 574px) {
   .hero__img {
-    margin-bottom: 16px;
+    margin-bottom: 46px;
   }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .hero__img {
     width: 424px;
-    margin-bottom: 17px;
+    margin-bottom: 47px;
     margin-left: auto;
     margin-right: auto;
   }
