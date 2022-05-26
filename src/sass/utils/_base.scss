@@ -9,10 +9,6 @@
     }
 }
 
-.page-header__menu.is-open .page-body {
-    overflow: hidden;
-}
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -50,6 +46,8 @@
 
     @media (min-width: 768px) and (max-width: 991px) {
         width: 768px;
+        padding-left: 39px;
+        padding-right: 39px;
     }
 
     @media (min-width: 992px) and (max-width: 1379px) {
