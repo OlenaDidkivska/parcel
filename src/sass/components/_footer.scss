@@ -1,40 +1,104 @@
 .page-footer{
     margin-bottom: 48px;
 
-    @media (min-width: 575px) and (max-width: 767px) {
+    @media screen and (min-width: 575px) {
         margin-bottom: 0px;
     }
 }
 
 .page-footer__container {
     border-top: 1px $color-border-menu solid;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 574px) {
+        justify-content: center;
+        position: relative;
+        max-width: 294px;
+        height: 95px;
+        padding: 0;
+    }
+
+    @media screen and (min-width: 575px) {
+        justify-content: space-between;
+        padding: 0;
+    }
 
     @media (min-width: 575px) and (max-width: 767px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         width: 513px;
-        height: 96px;
-        padding: 0;
+        height: 95px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 690px;
+        height: 80px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1379px) {
+        width: 929px;
+        height: 90px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        width: 1338px;
+        height: 100px;
     }
 }
 
 .logo--footer{
     text-align: center;
     display: block;
-    margin-bottom: 15px;
+    
+}
+.page-footer__policy{
+    display: flex;
 
-    @media (min-width: 575px) and (max-width: 767px) {
-        margin-bottom: 0;
+    @media screen and (max-width: 574px) {
+        position: absolute;
+        bottom: 0;
     }
 }
 
-.page-footer__text{
-    @include font (500, 11px, 1.5);
+.page-footer__text,
+.page-footer__text--before::before {
     color: $color-text-primary;
 
+    @media screen and (max-width: 574px) {
+        font-weight: 500;
+        font-size: 11px;
+    }
+
     @media (min-width: 575px) and (max-width: 767px) {
-        @include font (500, 12px, 1.5);
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 13px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1379px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        font-size: 24px;
+    }
+}
+
+.page-footer__text:not(:last-child) {
+    @media screen and (max-width: 1379px) {
+        margin-right: 3px;
+    }
+    @media screen and (min-width: 1380px) {
+        margin-right: 80px;
+    }
+}
+
+.page-footer__text--before::before{
+    content: ' • ';
+    @media screen and (min-width: 1380px) {
+        display: none;
     }
 }
 
