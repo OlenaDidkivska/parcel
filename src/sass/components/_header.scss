@@ -13,11 +13,6 @@
         padding-bottom: 80px;
     }
 
-    @media screen and (max-width: 991px) {
-        justify-content: space-between;
-        position: relative;
-    }
-
     @media (min-width: 768px) and (max-width: 991px) {
         padding: 40px 39px;
     }
@@ -58,6 +53,9 @@
     fill: $color-btn-menu;
     background-color: $color-bkbtn-menu;
     border: none;
+    margin-left: auto;
+
+
 }
 
 .page-header__icon {
@@ -83,12 +81,12 @@
     display: none;
 }
 
+.page-header__btn.is-open .page-header__icon-cross {
+        display: block;
+    }
+
 .page-header__icon-cross {
     display: none;
-
-    .page-header__btn.is-open & {
-        display: block;
-    } 
 }
 
 .logo {
@@ -116,7 +114,7 @@
         left: 0;
         height: 100%;
         z-index: 1;
-        overflow-y: scroll;
+        overflow-y: auto;
 
         background-color: $color-bk-menu;
 
@@ -138,6 +136,10 @@
                 top: 135px;
                 width: 100%;
                 padding: 35px 33px;
+            }
+
+            & .page-header__icon-menu{
+                display: none;
             }
         }
     }
@@ -174,6 +176,10 @@
     @media (min-width: 575px) and (max-width: 767px) {
         @include font (500, 24px, 2.71);
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 // 
