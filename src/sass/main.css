@@ -7,6 +7,7 @@
   background-color: #FFFFFF;
   color: #8F95A5;
   font-family: Poppins, sans-serif;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 319px) {
@@ -235,6 +236,7 @@ img {
   font-style: normal;
   text-decoration: none;
   color: #939393;
+  line-height: 1.5;
 }
 
 .logo--brit {
@@ -243,17 +245,19 @@ img {
 
 @media screen and (max-width: 574px) {
   .logo {
-    font-weight: none;
     font-size: 24px;
-    line-height: 1.5;
   }
 }
 
-@media (min-width: 575px) and (max-width: 991px) {
+@media (min-width: 575px) and (max-width: 1379px) {
   .logo {
-    font-weight: none;
     font-size: 30px;
-    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .logo {
+    font-size: 36px;
   }
 }
 
@@ -1029,7 +1033,7 @@ img {
   margin-bottom: 48px;
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media screen and (min-width: 575px) {
   .page-footer {
     margin-bottom: 0px;
   }
@@ -1037,49 +1041,142 @@ img {
 
 .page-footer__container {
   border-top: 1px #C4C4C4 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 574px) {
+  .page-footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    max-width: 294px;
+    height: 95px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .page-footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
 }
 
 @media (min-width: 575px) and (max-width: 767px) {
   .page-footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 513px;
-    height: 96px;
-    padding: 0;
+    height: 95px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-footer__container {
+    width: 690px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1379px) {
+  .page-footer__container {
+    width: 929px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .page-footer__container {
+    width: 1338px;
+    height: 100px;
   }
 }
 
 .logo--footer {
   text-align: center;
   display: block;
-  margin-bottom: 15px;
 }
 
-@media (min-width: 575px) and (max-width: 767px) {
-  .logo--footer {
-    margin-bottom: 0;
+.page-footer__policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 574px) {
+  .page-footer__policy {
+    position: absolute;
+    bottom: 0;
   }
 }
 
-.page-footer__text {
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 1.5;
+.page-footer__text,
+.page-footer__text--before::before {
   color: #8F95A5;
 }
 
+@media screen and (max-width: 574px) {
+  .page-footer__text,
+  .page-footer__text--before::before {
+    font-weight: 500;
+    font-size: 11px;
+  }
+}
+
 @media (min-width: 575px) and (max-width: 767px) {
-  .page-footer__text {
+  .page-footer__text,
+  .page-footer__text--before::before {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .page-footer__text,
+  .page-footer__text--before::before {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1379px) {
+  .page-footer__text,
+  .page-footer__text--before::before {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .page-footer__text,
+  .page-footer__text--before::before {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1379px) {
+  .page-footer__text:not(:last-child) {
+    margin-right: 3px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .page-footer__text:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
+.page-footer__text--before::before {
+  content: ' • ';
+}
+
+@media screen and (min-width: 1380px) {
+  .page-footer__text--before::before {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -93,17 +93,22 @@
     font-style: normal;
     text-decoration: none;
     color: $color-logo-lex;
+    line-height: 1.5;
 
     &--brit{
         color: $color-logo-brit;
     }
 
     @media screen and (max-width: 574px) {
-        @include font (none, 24px, 1.5);
+        font-size: 24px;
     }
 
-    @media (min-width: 575px) and (max-width: 991px) {
-        @include font (none, 30px, 1.5);
+    @media (min-width: 575px) and (max-width: 1379px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 1380px) {
+        font-size: 36px;
     }
 }
 
