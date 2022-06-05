@@ -1,15 +1,29 @@
 <section class="contacts">
-    <div class="container">
-        <h2 class="contacts__title" >Contact Us</h2>
-        <img class="contacts__img" srcset="./images/resourse.png 1x, ./images/resourse@2x.png 2x"
-            src="./images/resourse.png" alt="Boy with an airplane" width="253">
-        <p class="contacts__text">Discover your current English level by
-        taking our free online English test.
-        Sign up to our newsletter for learning tips
-        and free resource</p>
-        <form class="contacts__form">
-            <input type="email" class="contacts__input" placeholder="Enter Your E-mail">
-            <button type="button" class="contacts__btn">Subscribe</button>
-        </form>
+    <div class="container contacts__container">
+        <h2 class="contacts__title">Contact Us</h2>
+        <picture>
+            <source srcset="./images/resourse-desk.png 1x, 
+                    ./images/resourse-desk@2x.png 2x" media="(min-width:1380px)" />
+            <source srcset="./images/resourse992.png 1x, 
+                                            ./images/resourse-992@2x.png 2x" media="(min-width:992px)" />
+            <source srcset="./images/resourse-tabl.png 1x, 
+                                            ./images/resourse-tabl@2x.png 2x" media="(min-width:768px)" />
+            <source srcset="./images/resourse-575.png 1x, 
+                                            ./images/resourse-575@2x.png 2x" media="(min-width:575px)" />
+            <source srcset="./images/resourse-mob.png 1x, 
+                                            ./images/resourse-mob@2x.png 2x" media="(min-width:320px)" />
+            <img class="contacts__img" src="./images/resourse-desk@2x.png" alt="Boy with an airplane">
+        </picture>
+        <div class="contacts__block">
+            <h2 class="contacts__title--container">Contact Us</h2>
+            <p class="contacts__text">Discover your current English level by
+                taking our free online English test.
+                Sign up to our newsletter for learning tips
+                and free resource</p>
+            <form class="contacts__form">
+                <input type="email" class="contacts__input" placeholder="Enter Your E-mail">
+                <button type="button" class="contacts__btn">Subscribe</button>
+            </form>
+        </div>
     </div>
 </section>
